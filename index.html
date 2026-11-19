@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>United Tutorial Website | Learn HTML & CSS</title>
+<meta name="description" content="A beginner-friendly HTML and CSS course with explanations, editable examples, live previews, practice tasks, quizzes, and progress tracking.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="topin">
+    <a class="brand" href="#" id="home"><span class="logo">&lt;/&gt;</span><span>UNiTED Tutorials Website<small>LEARN · TRY · CHECK · IMPROVE</small></span></a>
+    <nav class="toplinks"><a href="#" id="tutorialLink">Tutorials</a><a href="#editor">Code editor</a><a href="#quiz-info">Quizzes</a></nav>
+    <button class="btn" id="start" type="button">Start learning →</button>
+    <img alt="Taytay Senior High School logo" class="school-logo" src="school-logo.jpg">
+    <button aria-expanded="false" class="menu" id="menu" type="button">☰ Lessons</button>
+  </div>
+</header>
+<div class="layout">
+  <aside id="sidebar">
+    <div class="sidehead">HTML TUTORIAL</div>
+<button class="lesson active" data-n="0">1. HTML Introduction</button>
+<button class="lesson" data-n="1">2. HTML Document Structure</button>
+<button class="lesson" data-n="2">3. Headings and Paragraphs</button>
+<button class="lesson" data-n="3">4. Links and Images</button>
+<button class="lesson" data-n="4">5. Lists</button>
+<button class="lesson" data-n="5">6. Forms and Inputs</button>
+<div class="sidehead">CSS TUTORIAL</div>
+<button class="lesson" data-n="6">7. CSS Introduction</button>
+<button class="lesson" data-n="7">8. Colors and Backgrounds</button>
+<button class="lesson" data-n="8">9. Fonts and Text</button>
+<button class="lesson" data-n="9">10. Margin, Padding, and Borders</button>
+<button class="lesson" data-n="10">11. Classes, IDs, and Selectors</button>
+<button class="lesson" data-n="11">12. Layout and Flexbox</button>
+<button class="lesson" data-n="12">13. Responsive Design</button>
+<div class="sidehead">PRACTICE</div>
+<button class="lesson" data-n="13">14. Final Mini Project</button>
+    <div class="progress-card"><b>My learning progress</b><div id="sideProgressText">0 of 14 lessons completed</div><div class="smallbar"><span id="sideProgressBar"></span></div><button class="done-btn" id="clearProgress" type="button">Reset progress</button><div class="offline-note">No account needed · Designed for low-data study</div></div>
+    <div class="sidehint"><b>UNITED learning loop</b><br>Read a lesson → edit the example → run the code → answer the quiz → mark it complete.</div>
+    <!-- ABOUT THE TEAM -->
+<div class="about-sidebar">
+  <h3>ABOUT US</h3>
+
+  <p><strong>Leader:</strong></p>
+  <p>Dustin James R. Cristobal</p>
+  <small>Researcher | Programmer</small>
+
+  <hr>
+
+  <p><strong>Members:</strong></p>
+
+  <p>John Thirdie E. Villasanta</p>
+  <small>Researcher | Programmer</small>
+
+  <p>Lienel G. Felicitas</p>
+  <small>Researcher | Programmer</small>
+
+  <p>Mark John B. Cabilin</p>
+  <small>Researcher | Programmer</small>
+</div>
+  </aside>
+  <main class="main">
+    <div class="crumb">Tutorials / <span id="crumb">HTML Introduction</span></div>
+    <div class="progress"><div class="bar" id="bar"></div></div>
+    <div class="progress-meta"><span>Course completion</span><strong id="topProgressText">0 of 14 completed</strong></div>
+    <section class="welcome">
+      <span class="pill">BEGINNER COURSE</span><h1>Learn HTML and CSS step by step</h1>
+      <p class="intro">Every lesson includes a simple explanation, working code you can edit, a live preview, a mini activity, and a quick quiz.</p>
+      <div class="cards"><div class="card"><h3>🏗️ HTML = Structure</h3><p>Build the content of a webpage.</p></div><div class="card"><h3>🎨 CSS = Style</h3><p>Control colors, fonts, spacing, and layout.</p></div><div class="card"><h3>💻 Learn by doing</h3><p>Change code and immediately see what happens.</p></div></div>
+      <button class="btn" data-goto="0" type="button">Begin lesson 1 →</button>
+    </section>
+    
+    <article class="lesson-content" data-lesson="0" >
+      <span class="pill">HTML · LESSON 1</span>
+      <h1>HTML Introduction</h1>
+      <p class="intro">HTML means HyperText Markup Language. It gives a webpage its structure and content. HTML uses elements written with tags. Most elements have an opening tag, content, and a closing tag.</p>
+      <div class="note"><b>Remember:</b> HTML = structure; CSS = appearance. A browser reads HTML and displays the page.</div>
+      <h2>Example: see it working</h2>
+      <p>A large heading saying “Hello, world!” and a paragraph below it. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-0">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-0" spellcheck="false">&lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;p&gt;This is my first webpage.&lt;/p&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for HTML Introduction" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the heading and paragraph to introduce yourself.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>What does HTML mainly provide to a webpage?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="true">Page structure</button><button class="option" data-correct="false">Database storage</button><button class="option" data-correct="false">Internet connection</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="0" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-0">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="1" hidden>
+      <span class="pill">HTML · LESSON 2</span>
+      <h1>HTML Document Structure</h1>
+      <p class="intro">A complete HTML page has a doctype, html, head, and body. The head stores page information; the body contains what visitors see.</p>
+      <div class="note"><b>Remember:</b> Use <!DOCTYPE html> first. Put the page title inside head and visible content inside body.</div>
+      <h2>Example: see it working</h2>
+      <p>A webpage with a Welcome heading and a short paragraph. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-1">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-1" spellcheck="false">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome!&lt;/h1&gt;
+  &lt;p&gt;This is my page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for HTML Document Structure" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the page title and the text inside the body.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which part contains the visible webpage content?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">body</button><button class="option" data-correct="true">title</button><button class="option" data-correct="false">footer</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="1" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-1">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="2" hidden>
+      <span class="pill">HTML · LESSON 3</span>
+      <h1>Headings and Paragraphs</h1>
+      <p class="intro">Headings describe sections. Use h1 for the main page heading, then h2, h3 and so on for subsections. Use p for paragraphs.</p>
+      <div class="note"><b>Remember:</b> Headings are about meaning and organization, not just making text bigger.</div>
+      <h2>Example: see it working</h2>
+      <p>A main heading, two smaller headings, and paragraphs. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-2">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-2" spellcheck="false">&lt;h1&gt;About Me&lt;/h1&gt;
+&lt;h2&gt;My Hobbies&lt;/h2&gt;
+&lt;p&gt;I enjoy reading and learning new things.&lt;/p&gt;
+&lt;h2&gt;My Goal&lt;/h2&gt;
+&lt;p&gt;I want to learn how to build websites.&lt;/p&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Headings and Paragraphs" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Add another heading and paragraph about your interests.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+  <h2>Quick Check</h2>
+  
+  <p>Which HTML tag is used to create a paragraph?</p>
+  
+  <div class="quiz-options">
+    
+    <button class="option" data-correct="false">
+      A. &lt;h1&gt;
+    </button>
+    
+    <button class="option" data-correct="true">
+      B. &lt;p&gt;
+    </button>
+    
+    <button class="option" data-correct="false">
+      C. &lt;img&gt;
+    </button>
+    
+  </div>
+  
+  <p class="feedback" aria-live="polite"></p>
+</div>
+      <button class="btn mark-complete" data-complete="2" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-2">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="3" hidden>
+      <span class="pill">HTML · LESSON 4</span>
+      <h1>Links and Images</h1>
+      <p class="intro">The a element creates a link. The img element displays an image. The href attribute gives a link destination; src gives an image location; alt describes the image.</p>
+      <div class="note"><b>Remember:</b> Use meaningful link text and helpful alt text. Use an image URL or a file saved beside your HTML file.</div>
+      <h2>Example: see it working</h2>
+      <p>A clickable link and a sample image. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-3">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-3" spellcheck="false">&lt;h2&gt;Useful Website&lt;/h2&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+&lt;h2&gt;Picture&lt;/h2&gt;
+&lt;img src="https://placehold.co/300x160" alt="A sample placeholder picture" width="300"&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Links and Images" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the link text and try a different image URL.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which attribute tells a link where to go?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="true">href</button><button class="option" data-correct="false">alt</button><button class="option" data-correct="false">width</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="3" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-3">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="4" hidden>
+      <span class="pill">HTML · LESSON 5</span>
+      <h1>Lists</h1>
+      <p class="intro">Use ul for an unordered (bulleted) list and ol for an ordered (numbered) list. Each list item goes inside li.</p>
+      <div class="note"><b>Remember:</b> Lists help organize steps, supplies, menus, and groups of information.</div>
+      <h2>Example: see it working</h2>
+      <p>A bulleted list and a numbered list. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-4">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-4" spellcheck="false">&lt;h2&gt;My Favorite Subjects&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;English&lt;/li&gt;
+  &lt;li&gt;Science&lt;/li&gt;
+  &lt;li&gt;ICT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Steps to Study&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Read the lesson&lt;/li&gt;
+  &lt;li&gt;Practice&lt;/li&gt;
+  &lt;li&gt;Review&lt;/li&gt;
+&lt;/ol&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Lists" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Add one more item to each list.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which tag represents one item in a list?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false"><li></button><button class="option" data-correct="true"><ol></button><button class="option" data-correct="false"><head></button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="4" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-4">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="5" hidden>
+      <span class="pill">HTML · LESSON 6</span>
+      <h1>Forms and Inputs</h1>
+      <p class="intro">Forms collect information from visitors. Common controls include input, label, select, textarea, and button. The label helps people understand each field.</p>
+      <div class="note"><b>Remember:</b> This example is only a front-end form. It displays fields but does not send or save information to a server.</div>
+      <h2>Example: see it working</h2>
+      <p>A name field, subject dropdown, and button that shows a thank-you message. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-5">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-5" spellcheck="false">&lt;form&gt;
+  &lt;label for="student"&gt;Your name:&lt;/label&gt;&lt;br&gt;
+  &lt;input id="student" type="text" placeholder="Enter your name"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label for="course"&gt;Choose a subject:&lt;/label&gt;&lt;br&gt;
+  &lt;select id="course"&gt;
+    &lt;option&gt;HTML&lt;/option&gt;
+    &lt;option&gt;CSS&lt;/option&gt;
+  &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+  &lt;button type="button" onclick="document.getElementById('reply').textContent='Thanks for trying the form!'"&gt;Submit&lt;/button&gt;
+  &lt;p id="reply"&gt;&lt;/p&gt;
+&lt;/form&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Forms and Inputs" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Add an email input or a message box to the form.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>What is the main purpose of an HTML form?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">To collect user information</button><button class="option" data-correct="false">To style text</button><button class="option" data-correct="true">To create images</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="5" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-5">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="6" hidden>
+      <span class="pill">CSS · LESSON 7</span>
+      <h1>CSS Introduction</h1>
+      <p class="intro">CSS means Cascading Style Sheets. It controls how HTML elements look, including colors, fonts, spacing, borders, and layout.</p>
+      <div class="note"><b>Remember:</b> A CSS rule has a selector and declarations. Each declaration has a property and a value.</div>
+      <h2>Example: see it working</h2>
+      <p>A green heading and a larger paragraph. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-6">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-6" spellcheck="false">&lt;style&gt;
+  h1 { color: seagreen; }
+  p { font-size: 18px; }
+&lt;/style&gt;
+&lt;h1&gt;Styled Heading&lt;/h1&gt;
+&lt;p&gt;This paragraph is styled with CSS.&lt;/p&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for CSS Introduction" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the heading color to a color you like.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>What does CSS control?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">The appearance of a webpage</button><button class="option" data-correct="true">The internet speed</button><button class="option" data-correct="false">The computer hardware</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="6" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-6">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="7" hidden>
+      <span class="pill">CSS · LESSON 8</span>
+      <h1>Colors and Backgrounds</h1>
+      <p class="intro">CSS can set text color with color and an element's background with background-color. Colors can be written as names, hex values, or RGB values.</p>
+      <div class="note"><b>Remember:</b> Choose colors with enough contrast so text is easy to read.</div>
+      <h2>Example: see it working</h2>
+      <p>A pale green page, green heading, and highlighted paragraph. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-7">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-7" spellcheck="false">&lt;style&gt;
+  body { background-color: #e8f7ef; }
+  h1 { color: #087f5b; }
+  .highlight { background-color: #fff2b2; padding: 10px; }
+&lt;/style&gt;
+&lt;h1&gt;Welcome to my site&lt;/h1&gt;
+&lt;p class="highlight"&gt;This paragraph has a background color.&lt;/p&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Colors and Backgrounds" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Try a different background color for the highlighted paragraph.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which property changes an element's background color?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="true">background-color</button><button class="option" data-correct="false">font-size</button><button class="option" data-correct="false">text-align</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="7" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-7">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="8" hidden>
+      <span class="pill">CSS · LESSON 9</span>
+      <h1>Fonts and Text</h1>
+      <p class="intro">CSS text properties change readability and appearance. Common properties include font-family, font-size, font-weight, text-align, and line-height.</p>
+      <div class="note"><b>Remember:</b> Use readable font sizes and keep paragraphs comfortable to read.</div>
+      <h2>Example: see it working</h2>
+      <p>A centered title and a readable paragraph with green emphasized text. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-8">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-8" spellcheck="false">&lt;style&gt;
+  body { font-family: Arial, sans-serif; }
+  h1 { text-align: center; font-size: 30px; }
+  p { font-size: 18px; line-height: 1.6; }
+  strong { color: seagreen; }
+&lt;/style&gt;
+&lt;h1&gt;Learning Web Design&lt;/h1&gt;
+&lt;p&gt;Good text styling makes a page &lt;strong&gt;clear and readable&lt;/strong&gt;.&lt;/p&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Fonts and Text" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the font family and make the paragraph text larger.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which property changes the font size?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">font-size</button><button class="option" data-correct="true">font-weight</button><button class="option" data-correct="false">line-height</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="8" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-8">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="9" hidden>
+      <span class="pill">CSS · LESSON 10</span>
+      <h1>Margin, Padding, and Borders</h1>
+      <p class="intro">The CSS box model describes each element as content surrounded by padding, border, and margin. Padding is inside the border; margin is outside it.</p>
+      <div class="note"><b>Remember:</b> Use padding to add space inside a box and margin to separate it from other elements. Border draws an outline.</div>
+      <h2>Example: see it working</h2>
+      <p>A green-tinted card with space inside, an outline, and space around it. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-9">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-9" spellcheck="false">&lt;style&gt;
+  .card { background: #e8f7ef; padding: 20px; border: 2px solid seagreen; margin: 18px; border-radius: 10px; }
+&lt;/style&gt;
+&lt;div class="card"&gt;
+  &lt;h2&gt;My Card&lt;/h2&gt;
+  &lt;p&gt;Padding is inside. Margin is outside.&lt;/p&gt;
+&lt;/div&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Margin, Padding, and Borders" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the card padding, margin, or border color.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Where is padding located in the box model?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="true">Inside the border</button><button class="option" data-correct="false">Outside the margin</button><button class="option" data-correct="false">Behind the screen</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="9" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-9">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="10" hidden>
+      <span class="pill">CSS · LESSON 11</span>
+      <h1>Classes, IDs, and Selectors</h1>
+      <p class="intro">A selector tells CSS which HTML elements to style. A class starts with a dot (.) and can be reused. An ID starts with # and should identify one unique element on a page.</p>
+      <div class="note"><b>Remember:</b> Use classes for styles shared by several elements. Use IDs for unique page elements and for linking or scripting when needed.</div>
+      <h2>Example: see it working</h2>
+      <p>A heading with a green underline and two green bold paragraphs. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-10">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-10" spellcheck="false">&lt;style&gt;
+  .important { color: seagreen; font-weight: bold; }
+  #main-title { border-bottom: 2px solid seagreen; }
+&lt;/style&gt;
+&lt;h1 id="main-title"&gt;My Website&lt;/h1&gt;
+&lt;p class="important"&gt;This message uses a class.&lt;/p&gt;
+&lt;p class="important"&gt;The same class can be reused.&lt;/p&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Classes, IDs, and Selectors" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Add a new paragraph with the important class.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which symbol begins a class selector in CSS?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">.</button><button class="option" data-correct="true">#</button><button class="option" data-correct="false">@</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="10" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-10">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="11" hidden>
+      <span class="pill">CSS · LESSON 12</span>
+      <h1>Layout and Flexbox</h1>
+      <p class="intro">CSS layout tools help arrange content. Flexbox is useful for placing items in a row or column and controlling alignment and spacing.</p>
+      <div class="note"><b>Remember:</b> Set display: flex on a parent. Use gap for space, justify-content for the main direction, and align-items for cross-axis alignment.</div>
+      <h2>Example: see it working</h2>
+      <p>Three green boxes arranged in a flexible row. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-11">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-11" spellcheck="false">&lt;style&gt;
+  .container { display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap; background: #e8f7ef; padding: 15px; }
+  .item { background: seagreen; color: white; padding: 18px; border-radius: 8px; }
+&lt;/style&gt;
+&lt;div class="container"&gt;
+  &lt;div class="item"&gt;One&lt;/div&gt;
+  &lt;div class="item"&gt;Two&lt;/div&gt;
+  &lt;div class="item"&gt;Three&lt;/div&gt;
+&lt;/div&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Layout and Flexbox" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Add a fourth box and change the gap between boxes.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which value turns an element into a flex container?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">display: block</button><button class="option" data-correct="false">position: flex</button><button class="option" data-correct="true">display: flex</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="11" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-11">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="12" hidden>
+      <span class="pill">CSS · LESSON 13</span>
+      <h1>Responsive Design</h1>
+      <p class="intro">Responsive design makes a website work on different screen sizes. Use the viewport meta tag, flexible widths, and media queries to adjust layouts for smaller screens.</p>
+      <div class="note"><b>Remember:</b> Try resizing the preview area or opening the page on a phone. Avoid fixed widths that are wider than the screen.</div>
+      <h2>Example: see it working</h2>
+      <p>A centered box that becomes full width on narrow screens. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-12">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-12" spellcheck="false">&lt;style&gt;
+  .box { width: 70%; margin: auto; padding: 20px; background: #e8f7ef; border: 2px solid seagreen; }
+  @media (max-width: 600px) {
+    .box { width: 100%; padding: 12px; }
+    h1 { font-size: 24px; }
+  }
+&lt;/style&gt;
+&lt;h1&gt;Responsive Example&lt;/h1&gt;
+&lt;div class="box"&gt;Resize the preview or screen to see the layout adapt.&lt;/div&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Responsive Design" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Change the media query width from 600px to 700px.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>What is the purpose of a media query?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="true">To apply styles at certain screen sizes</button><button class="option" data-correct="false">To add a website title</button><button class="option" data-correct="false">To create a form</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="12" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-12">Complete this lesson when you are ready.</p>
+    </article>
+    <article class="lesson-content" data-lesson="13" hidden>
+      <span class="pill">PRACTICE · LESSON 14</span>
+      <h1>Final Mini Project</h1>
+      <p class="intro">Put the basics together: create a simple personal profile page with a heading, paragraph, list, link, and CSS styling. Change the text and colors to make it your own.</p>
+      <div class="note"><b>Remember:</b> Start by editing the example. Try adding another list item, changing the background color, and adding a new section.</div>
+      <h2>Example: see it working</h2>
+      <p>A styled personal profile card with a heading, paragraph, list, and link. The preview below runs the code. Edit the code and press <b>Run code</b> to see your changes.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Editable example</strong><span>Change the code, then run it</span></div>
+        <label class="editor-label" for="lesson-code-13">Code editor</label>
+        <textarea class="lesson-code" id="lesson-code-13" spellcheck="false">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;My Profile&lt;/title&gt;
+&lt;style&gt;
+  body { font-family: Arial, sans-serif; background: #f1faf5; color: #243044; padding: 20px; }
+  .profile { max-width: 600px; margin: auto; background: white; padding: 24px; border-radius: 12px; border: 1px solid #cde8d9; }
+  h1 { color: #087f5b; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;main class="profile"&gt;
+    &lt;h1&gt;Hello! I'm a Student&lt;/h1&gt;
+    &lt;p&gt;I'm learning how to create websites using HTML and CSS.&lt;/p&gt;
+    &lt;h2&gt;My Interests&lt;/h2&gt;
+    &lt;ul&gt;&lt;li&gt;Technology&lt;/li&gt;&lt;li&gt;Music&lt;/li&gt;&lt;li&gt;Learning&lt;/li&gt;&lt;/ul&gt;
+    &lt;a href="https://www.example.com"&gt;Visit a sample website&lt;/a&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+        <div class="playground-actions">
+          <button class="btn run-lesson" type="button">▶ Run code</button>
+          <button class="btn secondary reset-lesson" type="button">Reset example</button>
+          <span class="run-status" aria-live="polite">Ready to run</span>
+        </div>
+        <div class="preview-label">Live result</div>
+        <iframe class="lesson-preview" title="Live preview for Final Mini Project" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="mission">
+        <h2>Try it yourself</h2>
+        <p>Personalize the profile with your own introduction and interests.</p>
+      </div>
+      <div class="quiz lesson-quiz">
+        <h2>Quick check</h2>
+        <p>Which two languages are used in this beginner course?</p>
+        <div class="quiz-options">
+          <button class="option" data-correct="false">HTML and CSS</button><button class="option" data-correct="true">Python and Java</button><button class="option" data-correct="false">HTML and SQL</button>
+        </div>
+        <p class="feedback" aria-live="polite"></p>
+      </div>
+      <button class="btn mark-complete" data-complete="13" type="button">✓ Mark lesson complete</button>
+      <p class="done-note" id="done-note-13">Complete this lesson when you are ready.</p>
+    </article>
+    <section id="editor">
+      <span class="pill">EXTRA PRACTICE</span><h2>Full-page code editor</h2>
+      <p>Try writing your own small HTML page. Press Run to see it in the preview.</p>
+      <div class="playground">
+        <div class="playground-head"><strong>Your HTML workspace</strong><span>Experiment safely</span></div>
+        <textarea id="code" spellcheck="false" aria-label="Editable HTML code"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Practice Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f1faf5; padding: 20px; }
+    h1 { color: seagreen; }
+  </style>
+</head>
+<body>
+  <h1>Hello, United!</h1>
+  <p>I am practicing HTML and CSS.</p>
+</body>
+</html></textarea>
+        <div class="playground-actions"><button class="btn" id="run" type="button">▶ Run code</button><button class="btn secondary" id="reset" type="button">Reset code</button><span id="status" class="run-status" aria-live="polite">Ready to run</span></div>
+        <div class="preview-label">Live result</div><iframe id="preview" title="Full-page code preview" sandbox="allow-scripts"></iframe>
+      </div>
+    </section>
+    <section id="quiz-info" class="note"><b>How to use this website:</b> Choose a lesson from the left menu. Read the explanation, edit the example, and press Run code. The preview shows the result. Reset example restores the original code. Your progress is saved on this device when browser storage is available.</section>
+    <div class="pager"><button class="btn secondary" id="prev" type="button">← Previous</button><button class="btn" id="next" type="button">Next lesson →</button></div>
+    <footer>United Tutorial Website · Beginner HTML & CSS learning resource for School purposes only. <br>Made by Grade 12 ICT COMPROG Students.</footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
